@@ -25,10 +25,11 @@ jobs:
         run: npm run build
 
       - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            apps/plugin/main.js
+            apps/plugin/manifest.json
+            apps/plugin/styles.css
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release create ${{ github.ref_name }} \
-            --title "Release ${{ github.ref_name }}" \
-            --generate-notes \
-            apps/plugin/main.js apps/plugin/manifest.json apps/plugin/styles.css
