@@ -1,6 +1,6 @@
 {
 	"name": "@glossa/plugin",
-	"version": "0.0.3",
+	"version": "0.1.0",
 	"description": "Obsidian plugin — turn any text into living vocabulary.",
 	"main": "main.js",
 	"scripts": {
