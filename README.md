@@ -18,15 +18,15 @@ A free Google Gemini API key from [Google AI Studio](https://aistudio.google.com
 
 ## Installation
 
-1. Download `main.js`, `manifest.json`, and `styles.css` from the [Releases](https://github.com/chiunhau/ai-flashcards-obsidian-plugin/releases) page.
-2. Copy them into `.obsidian/plugins/ai-language-flashcards/` inside your vault.
+1. Download `main.js`, `manifest.json`, and `styles.css` from the [Releases](https://github.com/chiunhau/glossa-flashcards/releases) page.
+2. Copy them into `.obsidian/plugins/glossa-flashcards/` inside your vault.
 3. Reload Obsidian and enable the plugin under Settings → Community Plugins.
 
 ---
 
 ## Quick Start
 
-1. Go to **Settings → AI Language Flashcards** and paste your Gemini API key.
+1. Go to **Settings → Glossa Flashcards** and paste your Gemini API key.
 2. Set your **Target language** (e.g. Finnish, Japanese, Spanish).
 3. In any note, select a word or phrase, right-click, and choose **Create [language] flashcard**.
 

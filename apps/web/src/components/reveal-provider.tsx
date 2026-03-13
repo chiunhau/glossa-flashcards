@@ -12,7 +12,7 @@ export function RevealProvider({ children }: { children: React.ReactNode }) {
           }
         }
       },
-      { threshold: 0.08, rootMargin: "0px 0px -30px 0px" }
+      { threshold: 0.08, rootMargin: "0px 0px -30px 0px" },
     );
 
     const elements = document.querySelectorAll(".reveal");

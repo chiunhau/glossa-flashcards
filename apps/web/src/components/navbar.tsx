@@ -1,9 +1,12 @@
+import { Github } from "lucide-react";
+
 export function Navbar() {
 	return (
 		<nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b border-white/[0.07] bg-[#0a0a0a]/90 px-10 py-[1.1rem] backdrop-blur-[16px]">
+			<div className="flex items-center gap-10">
 			<a
 				href="/"
-				className="font-sans text-lg font-bold tracking-[-0.03em] text-white no-underline"
+				className="font-sans text-xl font-bold tracking-[-0.03em] text-white no-underline"
 			>
 				glossa<span className="text-lime">.md</span>
 			</a>
@@ -34,13 +37,25 @@ export function Navbar() {
 					</a>
 				</li>
 			</ul>
+			</div>
 
+			<div className="flex items-center gap-6">
+				<a
+					href="https://github.com/chiunhau/glossa-flashcards"
+					target="_blank"
+					rel="noreferrer"
+					className="text-muted transition-colors hover:text-white"
+					aria-label="GitHub Repository"
+				>
+					<Github strokeWidth={2} className="size-6" />
+				</a>
 			<a
 				href="#install"
 				className="rounded-[3px] bg-lime px-[1.3rem] py-[0.55rem] font-mono text-base font-medium uppercase tracking-[0.08em] text-bg no-underline transition-opacity hover:opacity-85"
 			>
 				Install free
 			</a>
+			</div>
 		</nav>
 	);
 }
